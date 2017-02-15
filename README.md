@@ -1,5 +1,5 @@
 **Test task: Boardroom Booker.**
-In this task I try to do not use any 3rd-party libraries. 
+In this task I do not use any 3rd-party libraries. 
 
 1. download
 2. Create db for this project
