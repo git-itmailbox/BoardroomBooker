@@ -30,7 +30,7 @@ class Db
         
         $sql = file_get_contents('dump1502.sql');
        
-         $db->query($sql);
+          return $db->query($sql);
       
     }
     
@@ -38,7 +38,13 @@ class Db
  $dbname=$_POST['dbname'];
  $login=$_POST['login'];
  $password=$_POST['password'];
- if($dbname!=='' & $login!=='' )  install($dbname,$login, $password);
+ if($dbname!=='' & $login!=='' )  {
+  if(install($dbname,$login, $password)){
+      echo 'All tables are created<BR>Now modify dbname, user and password in connection.php and everything will be works fine';
+    return;
+    }
+ }
+    
  else echo "Please fill dbname and login. Password if needed <BR>";
  }
 ?>
