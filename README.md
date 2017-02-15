@@ -41,7 +41,12 @@ It also in file "nginxtestconfig", just change line with root   like
 </pre>
 to your path;
 also may be you need change server_name.
+
 4. in browser enter localhost/start.php
+
 5. There must be load a simple form, where you need to fill created before DBname, mysql user and password(if it needs).
+
 6. If 5th instruction is successfull then modify connection.php for your dbname and mysql access.
+
 7. Now you can enter localhost and use Boardroom Booker. (by default there only one user(login/password): admin/123).
+
